@@ -30,7 +30,7 @@ const serverlessConfiguration: AWS = {
             "dynamodb:UpdateItem",
             "dynamodb:DeleteItem",
           ],
-          Resource: "arn:aws:dynamodb:us-west-2:*:table/TodosTable2",
+          Resource: "arn:aws:dynamodb:us-west-2:*:table/TodosTable",
         }],
       },
 
@@ -64,7 +64,7 @@ const serverlessConfiguration: AWS = {
       TodosTable: {
         Type: "AWS::DynamoDB::Table",
         Properties: {
-          TableName: "TodosTable2",
+          TableName: "TodosTable",
           AttributeDefinitions: [{
             AttributeName: "todosId",
             AttributeType: "S",

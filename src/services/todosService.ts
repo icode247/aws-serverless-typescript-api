@@ -4,7 +4,7 @@ import Todo from "../model/Todo";
 
 export default class TodoServerice {
 
-    private Tablename: string = "TodosTable2";
+    private Tablename: string = "TodosTable";
 
     constructor(private docClient: DocumentClient) { }
 
